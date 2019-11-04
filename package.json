@@ -1,6 +1,6 @@
 {
   "name": "egg-dora-announce",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "announce",
   "eggPlugin": {
     "name": "doraAnnounce"
@@ -53,7 +53,7 @@
     "url": "git+https://github.com/doramart/egg-dora-announce.git"
   },
   "bugs": {
-    "url": "https://github.com/doramart/egg/issues"
+    "url": "https://github.com/doramart/egg-dora-announce/issues"
   },
   "homepage": "https://github.com/doramart/egg-dora-announce#readme",
   "author": "doramart",
