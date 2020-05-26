@@ -17,7 +17,7 @@ exports.doraAnnounce = {
     isindex: 0, // 是否需要前台访问，1：需要，0：不需要,入口地址:'/ext/devteam/index/index'
     version: pkgInfo.version, // 版本号
     iconName: 'icon_inform_fill', // 主菜单图标名称
-    adminUrl: 'https://cdn.html-js.cn/cms/plugins/static/admin/announce/js/app.js',
+    adminUrl: '/announce/js/app.js',
     adminApi: [{
         url: 'systemAnnounce/getList',
         method: 'get',
@@ -35,16 +35,15 @@ exports.doraAnnounce = {
         details: '删除公告',
     }],
     fontApi: [],
-    
+
     initData: '', // 初始化数据脚本
     pluginsConfig: ` 
-    exports.doraAnnounce = {\n
-        enable: true,\n
-        \n
+    module.exports = {\n
+        enable: true,\n        package: 'egg-dora-announce',
     };\n
     `, // 插入到 plugins.js 中的配置
     defaultConfig: `
-    announceRouter:{\n
+    module.exports = {\n
         match: [ctx => ctx.path.startsWith('/manage/systemAnnounce')],\n
     },\n
     `, // 插入到 config.default.js 中的配置
